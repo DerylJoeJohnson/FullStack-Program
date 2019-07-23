@@ -5,3 +5,9 @@ body{
     background:url('../images.jpg');
 
 }
+.B{
+        border: 30px solid red;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+}
