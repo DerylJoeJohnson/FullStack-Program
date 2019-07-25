@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./js/calculation.js">
+       
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+        <div class="container">
+                <div class="row">
+                    <div class="col col-4 col-sm-4" style="">
+                            <div class="card" style="width: 18rem;">
+                                    <form action="">
+                                            <table class="table table-borderless">
+                                                <tr>
+                                                        <td>Enter number 1 :</td>
+                                                        <td><input type="number" id="number1" class="form-control"></td>
+                                        
+                                                </tr>
+                                                <tr>
+                                                    <td>Enter number 2 :</td>
+                                                    <td><input type="number" id="number2" class="form-control"></td>
+                                        
+                                                </tr>
+                                                <tr>
+                                                    <td>Operation   :</td>
+                                                    <td>
+                                                        <select name="" id="operation" onchange="getrslt();">
+                                                            <option class="form-control" value="">Select Option</option>
+                                                            <option class="form-control" value="Addition">Addition</option>
+                                                            <option class="form-control" value="Subtraction">Subtraction</option>
+                                                            <option class="form-control" value="Multiplication">Multiplication</option>
+                                                            <option class="form-control" value="Division">Division</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                               
+                                                <tr>
+                                                    <td>
+                                                        <p id="result"></p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        
+                                    </form>        
+                                
+
+        </div>
+                 </div>
+                    </div>
+                             </div>
+    
+</body>
+</html>
