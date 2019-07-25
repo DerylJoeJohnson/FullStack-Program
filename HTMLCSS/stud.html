@@ -5,35 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Student</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <script>
+        function getdetails()
+        {
+            var n1=document.getElementById("name").value;
+            var n2=document.getElementById("branch").value;
+            var n3=document.getElementById("date").value;
+            var n4=document.getElementById("age").value;
+            var n5;
+            if (document.getElementById("male").checked)
+            {
+                n5=document.getElementById("male").value;
+            }
+            else if(document.getElementById("female").checked)
+            {
+                n5=document.getElementById("female").value;
+            }
+            else if(document.getElementById("other").checked)
+            {
+                n5=document.getElementById("other").value;
+            }
+
+            
+            document.getElementById("r1").innerHTML=n1;
+            
+            document.getElementById("r2").innerHTML=n2;
+           
+            document.getElementById("r3").innerHTML=n3;
+            
+            document.getElementById("r4").innerHTML=n4;
+            
+            document.getElementById("r5").innerHTML=n5;
+
+
+
+
+        }
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-    <table>
+    <div class="container">
+        <div class="row">
+            <div class="col col-12 col-sm-5" style="">
+                <form action="">
+    <table class="table table-borderless">
         <tr>
             <td>Name</td>
-            <td><input type="text"></td>
+            <td><input type="text" id="name" class="form-control"></td>
         </tr>
         <tr>
             <td>Branch</td>
             <td>
-            <select>
-            <option>Computer Science</option>
-            <option>Electrical and Electronics</option>
-            <option>Electronics and Communication</option>
+            <select id="branch" >
+            <option class="form-control">Computer Science</option>
+            <option class="form-control">Electrical and Electronics</option>
+            <option class="form-control">Electronics and Communication</option>
             </select>
             </td>
         </tr>
         <tr>
             <td>Date of birth</td>
-            <td><input type="date"></td>
+            <td><input type="date" id="date" class="form-control"></td>
         </tr>
         <tr>
             <td>Age</td>
-            <td><input type="number" min="10" max="75"></td>
+            <td><input type="number" min="10" max="75" id="age" class="form-control"></td>
         </tr>
         <tr>
             <td>Gender</td>
-            <td><input type="radio" name="Gender">MALE <input type="radio" name="Gender">Female <input type="radio" name="Gender"> Other</td>
+            <td><input type="radio" name="Gender" id="male" value="Male">MALE <input type="radio" name="Gender" id="female" value="female">Female <input type="radio" name="Gender" id="other" value="other"> Other</td>
         </tr>
         <tr>
             <td><input type="checkbox"></td>
@@ -41,8 +82,38 @@
         </tr>
         <tr>
             <td> </td>
-            <td><button>Submit</button></td>
+            <td><button type= "button" class="btn btn-success" onclick="getdetails();">Submit</button></td>
         </tr>
+       
+        <tr>
+                <td>
+                    <p id="r1"></p>
+                </td>
+            </tr>
+            <tr>
+                    <td>
+                        <p id="r2"></p>
+                    </td>
+                </tr>
+                <tr>
+                        <td>
+                            <p id="r3"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                            <td>
+                                <p id="r4"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                    <p id="r5"></p>
+                                </td>
+                            </tr>
     </table>
+    </form>
+</div>
+</div>
+</div>
 </body>
 </html>
