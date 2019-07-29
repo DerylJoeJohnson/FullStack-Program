@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready( function()
+        {
+            
+                    $("#3").dblclick(function(){
+                        $(".msg").hide(2000);
+
+                    });
+                    $("#2").dblclick(function(){                       //use dblclick to  work only when double clicked
+                        $(".msg").show(1000);
+                    });
+        });
+    </script>
+</head>
+<body>
+    <p><button type="button" class=btn btn-success id="2">Show me </button>
+         <button type="button" class=btn btn-success id="3">Hide me </button>    </p>
+    <p class="msg" id="1">
+        Fullstack 
+    </p>
+</body>
+</html>
