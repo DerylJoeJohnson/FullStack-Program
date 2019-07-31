@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <div class="container">
+                <div class="row">
+                    <div class="col col-4 col-sm-4" style="">
+                            <div class="card" style="width: 18rem;">
+                                <div class="card-body">Enter Number <input id="2" type="number"> <button id="1" onclick="getresult();">CHECK</button>
+                                  <p id="result"></p>  
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+
+
+    </div>
+    <script>
+        function getresult()
+        {
+            var n=document.getElementById("2").value;
+       
+         
+    function find(n,callback)
+    {   
+        if(n%2==0)
+        callback("even");
+            
+        
+        else
+        callback("odd");
+            
+
+        
+        
+
+    }
+
+    find(n,(res)=>{
+        console.log(res);       
+        document.getElementById("result").innerHTML=res.toString();
+        
+    });
+}
+    </script>
+    
+</body>
+</html>
